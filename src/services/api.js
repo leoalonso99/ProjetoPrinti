@@ -1,10 +1,10 @@
 import Axios from "axios";
 
-const url = ''
-// colocar a url dentro das '' 
+const urlApi = "http://gateway.marvel.com/v1/public";
+
 
 const api = Axios.create({
-    baseURL: url,
+    baseURL: urlApi,
 })
 
 export default api
