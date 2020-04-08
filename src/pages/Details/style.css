@@ -1,0 +1,31 @@
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.details-container img {
+    width: 15%;
+    margin-right: 5%;
+}
+
+.details-container div {
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.details-container p {
+    margin-right: 5%;
+}
+
+.details-container .goBack {
+    display: flex;
+    align-items: center;
+    color: #6229fd;
+    flex-direction: row;
+    margin-top: 13%;
+}

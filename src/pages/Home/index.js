@@ -33,11 +33,15 @@ export default function Home() {
             setHeroes(res.data.data.results)
         })
 
-    })
+    }, [1])
 
     function logout() {
         localStorage.clear()
         history.push('/')
+    }
+
+    function details(id) {
+        history.push(`/details/${id}`)
     }
 
     return (
@@ -67,7 +71,7 @@ export default function Home() {
                                 <td>{res.name}</td>
                                 <td>{res.description ? res.description : 'Não tem descrição'}</td>
                                 <td>{format(new Date(res.modified), 'dd/MM/yyyy hh:mm')}</td>
-                                <td><button className="button">Saiba mais</button></td>
+                                <td><button className="button" onClick={() => details(res.id)}>Saiba mais</button></td>
                             </tr>
 
                         ))
